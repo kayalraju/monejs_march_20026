@@ -1,23 +1,21 @@
 
 const express=require('express')
+const ejs=require('ejs')
 
 
 const app=express();
 
 
-app.get('/',(req,res)=>{
-    res.send('<h1>home page</h1>')
-})
-app.get('/about',(req,res)=>{
-    res.send('<h1>about page</h1>')
-})
-
-app.get('/contact',(req,res)=>{
-    res.send('<h1>contact page</h1>')
-})
+//configure ejs
+app.set('view engine','ejs')
+app.set('views','views')
 
 
 
+
+//define routes
+const homeRoutes=require('./app/routes/home.routes')
+app.use(homeRoutes)  
 
 
 const PORT=3006;
