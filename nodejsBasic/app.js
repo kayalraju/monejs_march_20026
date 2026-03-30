@@ -1,10 +1,12 @@
-
+require('dotenv').config()
 const express=require('express')
 const ejs=require('ejs')
+const DBCon=require('./app/config/db')
 
 
 const app=express();
 
+DBCon()
 
 //configure ejs
 app.set('view engine','ejs')
@@ -13,10 +15,15 @@ app.set('views','views')
 //static folder
 app.use(express.static('public'))
 
+//json define
+app.use(express.json())
 
 //define routes
 const homeRoutes=require('./app/routes/home.routes')
 app.use(homeRoutes)  
+
+const ApiRoutes=require('./app/routes/ApiRoute')
+app.use('/api',ApiRoutes)
 
 
 const PORT=3006;
