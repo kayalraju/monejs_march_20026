@@ -19,5 +19,6 @@ router.get('/soft/delete/:id',CrudEjsController.softdelete)
 
 //trash data
 router.get('/trash',CrudEjsController.trash)
+router.get('/restore/:id',CrudEjsController.restore)
 
 module.exports = router

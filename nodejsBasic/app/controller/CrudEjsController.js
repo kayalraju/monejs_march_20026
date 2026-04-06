@@ -96,6 +96,16 @@ class CrudEjsController{
              
         }
     }
+   async restore(req,res){
+            try{
+                const id=req.params.id
+                await Student.findByIdAndUpdate(id,{isDeleted:false},{new:true})
+                return res.redirect('/show')
+        }catch(error){
+             console.log(error.message);
+             
+        }
+    }
 
 
 }
