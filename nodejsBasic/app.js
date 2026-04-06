@@ -17,6 +17,7 @@ app.use(express.static('public'))
 
 //json define
 app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 
 //define routes
 const homeRoutes=require('./app/routes/home.routes')
@@ -24,6 +25,9 @@ app.use(homeRoutes)
 
 const ApiRoutes=require('./app/routes/ApiRoute')
 app.use('/api',ApiRoutes)
+
+const crudEjsRoutes=require('./app/routes/crudEjsRoute')
+app.use(crudEjsRoutes)
 
 
 const PORT=3006;

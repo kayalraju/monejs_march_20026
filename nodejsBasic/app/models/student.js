@@ -18,7 +18,15 @@ const StudentSchema= new Schema({
      city:{
           type:String,
           required:true
+     },
+     isDeleted:{
+          type:Boolean,
+          default:false
      }
+},
+{
+     timestamps:true,
+     versionKey:false
 })
 
 
