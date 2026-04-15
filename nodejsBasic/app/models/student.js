@@ -19,6 +19,10 @@ const StudentSchema= new Schema({
           type:String,
           required:true
      },
+     image:{
+          type:String,
+          required:false
+     },
      isDeleted:{
           type:Boolean,
           default:false
