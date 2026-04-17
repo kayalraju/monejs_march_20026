@@ -3,12 +3,14 @@ const express=require('express')
 const ejs=require('ejs')
 const DBCon=require('./app/config/db')
 const path=require('path')
+const cors=require('cors')
 
 
 const app=express();
 
 DBCon()
 
+app.use(cors())
 //configure ejs
 app.set('view engine','ejs')
 app.set('views','views')
@@ -22,14 +24,12 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 //define routes
-const homeRoutes=require('./app/routes/home.routes')
-app.use(homeRoutes)  
 
-const ApiRoutes=require('./app/routes/ApiRoute')
-app.use('/api',ApiRoutes)
+const router=require('./app/routes') 
+app.use(router)
 
-const crudEjsRoutes=require('./app/routes/crudEjsRoute')
-app.use(crudEjsRoutes)
+
+
 
 
 const PORT=3006;
