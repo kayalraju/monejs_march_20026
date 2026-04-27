@@ -69,6 +69,7 @@ class AuthController {
           message: "Invalid credentials",
         });
       }
+      
 
       const token= jwt.sign({
         id:existingUser._id,
