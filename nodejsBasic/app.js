@@ -4,6 +4,8 @@ const ejs=require('ejs')
 const DBCon=require('./app/config/db')
 const path=require('path')
 const cors=require('cors')
+const session=require('express-session')
+const cookieParser=require('cookie-parser')
 
 
 const app=express();
@@ -15,6 +17,16 @@ app.use(cors())
 app.set('view engine','ejs')
 app.set('views','views')
 
+
+app.use(cookieParser())
+app.use(session({
+    secret: process.env.SESSION_SECRECT || 'hellonode',
+    resave: false,
+    saveUninitialized: false,
+    cookie: { 
+        maxAge: 1000 * 60 * 60 * 24 // 24 hours
+     }
+  }))
 //static folder
 app.use(express.static('public'))
 app.use('uploads',express.static(path.join(__dirname,'/uploads')))

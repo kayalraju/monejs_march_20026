@@ -6,6 +6,7 @@ const ApiRoutes=require('./ApiRoute')
 const crudejsRoutes=require('./crudEjsRoute')
 const Authroutes=require('./authroute')
 const homeRoutes=require('./home.routes')
+const authEjsRoutes=require('./authEjsRoute')
 
 //this route is for api
 router.use('/api',ApiRoutes)
@@ -15,6 +16,7 @@ router.use('/v1/auth',Authroutes)
 
 
 // this route for ejs
+router.use(authEjsRoutes)
 router.use(homeRoutes)
 router.use(crudejsRoutes)   
 
