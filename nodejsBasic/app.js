@@ -6,11 +6,14 @@ const path=require('path')
 const cors=require('cors')
 const session=require('express-session')
 const cookieParser=require('cookie-parser')
+const morgan = require('morgan')
 
 
 const app=express();
 
 DBCon()
+
+app.use(morgan('combined'))
 
 app.use(cors())
 //configure ejs

@@ -8,6 +8,7 @@ const Authroutes=require('./authroute')
 const homeRoutes=require('./home.routes')
 const authEjsRoutes=require('./authEjsRoute')
 const aggregateRoute=require('./AggregateRoute');
+const employeeRoute=require('./employeeRoute')
 
 //this route is for api
 router.use('/api',ApiRoutes)
@@ -21,6 +22,7 @@ router.use(authEjsRoutes)
 router.use(homeRoutes)
 router.use(crudejsRoutes)   
 router.use(aggregateRoute)
+router.use('/api',employeeRoute)
 
 
 
