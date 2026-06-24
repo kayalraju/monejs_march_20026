@@ -7,6 +7,11 @@ const cors=require('cors')
 const session=require('express-session')
 const cookieParser=require('cookie-parser')
 const morgan = require('morgan')
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+const SwaggerOptions = require('./swagger.json');
+const swaggerDocument = swaggerJsDoc(SwaggerOptions);
+
 
 
 const app=express();
@@ -43,7 +48,7 @@ app.use(express.urlencoded({extended:true}))
 const router=require('./app/routes') 
 app.use(router)
 
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 

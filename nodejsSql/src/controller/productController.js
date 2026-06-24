@@ -1,5 +1,6 @@
 
 const { Product } = require("../model/index");
+const {sequelize} = require("../config/dbcon");
 
 
 
@@ -10,6 +11,7 @@ class ProductController {
     async createProduct(req, res) {
         try{
             const { name, price, description } = req.body;
+            s
             const product = await Product.create({ name, price, description });
             return res.status(201).json({
                 message: "Product created successfully",

@@ -24,9 +24,9 @@ class StudentController{
                 city
             })
 
-            if(req.file){
-                Stu.image=req.file.path
-            }
+            // if(req.file){
+            //     Stu.image=req.file.path
+            // }
             
             const result=await Stu.save()
 
