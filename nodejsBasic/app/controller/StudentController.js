@@ -1,4 +1,5 @@
 
+const logger  = require('../utils/logger')
 const Student=require('../models/student')
 const httpStatusCode = require('../utils/httpStatusCode')
 const fs=require('fs')
@@ -6,6 +7,7 @@ const fs=require('fs')
 class StudentController{
     async createStudent(req,res){
        // console.log(req.file);
+       logger.info(req.file)
         
         try{
             const {name,email,phone,city}=req.body

@@ -1,0 +1,33 @@
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T05:59:35.948Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:09.350Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:12.216Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:17.595Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:25.322Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:27.061Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:00:27.461Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:30.587Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:00:30.980Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:33.374Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:00:33.760Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:00:44.069Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:00:44.489Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:14.510Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:14.901Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:22.431Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:22.837Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:24.803Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:25.210Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:27.723Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:30.643Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:35.548Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:35.922Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:41.939Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:42.334Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:46.121Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:46.521Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:01:48.576Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:01:48.965Z"}
+{"level":"error","message":"mongoose.connectf is not a function","service":"user-service","stack":"TypeError: mongoose.connectf is not a function\n    at DbCon (D:\\nodejs_march_11am\\nodejsBasic\\app\\config\\db.js:8:41)\n    at Object.<anonymous> (D:\\nodejs_march_11am\\nodejsBasic\\app.js:19:1)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47","timestamp":"2026-06-26T06:02:00.341Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:02:00.651Z"}
+{"level":"info","message":"server is running on port 3006","service":"user-service","timestamp":"2026-06-26T06:02:30.052Z"}
+{"level":"info","message":"Database connected","service":"user-service","timestamp":"2026-06-26T06:02:30.479Z"}

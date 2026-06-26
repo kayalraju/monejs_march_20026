@@ -11,7 +11,7 @@ const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const SwaggerOptions = require('./swagger.json');
 const swaggerDocument = swaggerJsDoc(SwaggerOptions);
-
+const logger=require('./app/utils/logger')
 
 
 const app=express();
@@ -55,5 +55,5 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 const PORT=3006;
 
 app.listen(PORT,()=>{
-    console.log(`server is running on port ${PORT}`)
+    logger.info(`server is running on port ${PORT}`)
 })
